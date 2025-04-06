@@ -1,0 +1,70 @@
+<style>
+
+.search-btn{
+  background-color: #fe424d;
+  color:#fff;
+  border-radius: 25px;
+  padding:0 1rem 0 1rem;
+
+}
+.search-btn:hover{
+  background-color: #fe424d;
+  color:#fff;
+}
+
+.search-btn i{
+  display:inline;
+  margin-right:0.5rem;
+  
+}
+
+.search-inp{
+  border-radius: 25px;
+  padding:0.5 rem 3rem 0.5rem 3 rem ;
+  font-size:1rem;
+
+}
+</style>
+
+
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">   
+    <div class="container-fluid">
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a style="color:#00e0ff"    class="navbar-brand" href="/listings"><i  style="color:#FF073A"  class="fas fa-city"></i>&nbsp; SaharaStay </a>
+      
+        </div>
+
+<!-- Add search button  -->
+
+<div class="navbar-nav ms-auto" >
+  <form class="d-flex" role="search">
+    <input class="form-control me-2 search-inp" type="search" placeholder="Search destinations" aria-label="Search">
+    <button       class="btn search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search </button>
+  </form>
+</div>
+
+
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link " href="/listings/new">Home </a>
+          <%if(!currUser){ %>       <!-- * it means if user not exist then show signup and login  -->
+
+        
+          <a class="nav-link active" aria-current="page" href="/signup"><b>Sign up</b></a>
+          <a class="nav-link" href="/login"><b>Login</b></a>
+          <% }%>
+
+          <%if(currUser){ %>     <!-- * it means if user  exist then show only logut  -->
+          <a class="nav-link" href="/logout"><b>Log out</b></a>
+       
+          <% }%>
+        </div>
+
+
+      </div>
+    </div>
+  </nav>

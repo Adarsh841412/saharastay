@@ -1,0 +1,51 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="row mt-3">     
+  <h1 class="col-6 offset-3">Login on SaharaStay</h1>
+<div class="col-6 offset-3">    
+
+<form method="post" action="/login"  class="needs-validation" novalidate> 
+
+
+    <!-- *Username -->
+
+    <div class="mb-3">
+
+        <label for="username" class="form-label">Username</label>
+       
+        <input 
+        id="username"  
+        type="text" 
+        name="username" 
+        
+        class="form-control"    
+        required >  <!--* FORM VALIDATION required ensure karega ki input mai jab tak value nhi aata form submit nhi hoga  and red color mai kuch dega  -->
+
+</div>
+
+
+<!-- *Password -->
+
+<div class="mb-3">
+
+    <label for="password" class="form-label">Password</label>
+   
+    <input 
+    id="password"  
+    type="password"  
+    name="password" 
+   
+    class="form-control"    
+    required >  <!--* FORM VALIDATION required ensure karega ki input mai jab tak value nhi aata form submit nhi hoga  and red color mai kuch dega  -->
+
+</div>
+
+<button class="btn btn-success">Login</button>
+
+</form>
+
+
+    </div>
+    </div>
+
+

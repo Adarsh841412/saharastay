@@ -1,0 +1,104 @@
+<% layout('layouts/boilerplate') -%>
+
+    <div class="row mt-">     <!-- hew i create row  -->
+  
+    <div class="col-8 offset-2">     <!--  here i divide row in 8 cols -->
+    
+    <h1>Create new listing </h1>
+
+  
+    <form  method="POST" action="/listings" novalidate   class="needs-validation"  enctype="multipart/form-data"> <!--*  FORM VALIDATION    here i add this to to off browser default required   -->
+        <div class="mb-3">
+
+            <label for="title" class="form-label">Title</label>
+           
+            <input 
+            id="title"  
+            type="text" 
+            name="listing[title]" 
+            placeholder="Add a catchy title" 
+            class="form-control"    
+            required >  <!--* FORM VALIDATION required ensure karega ki input mai jab tak value nhi aata form submit nhi hoga  and red color mai kuch dega  -->
+           
+    <div class="valid-feedback">Title looks good </div>     <!-- *success() wala hai becaue valid-feedback lia hai invalid-feedback leta to wo glt wala hota  -->      <!-- * it is form validation ka second part server side validation   now aab agr aap new rout pai title mai kuch value daloge and submit karoge to wo dega title looks good  -->
+     
+
+</div>
+    
+        <div class="mb-3">
+
+            <label for="title" class="form-label">Description</label>
+            <input type="text" name="listing[description]" placeholder="Description" class="form-control"    >
+           
+
+            <!-- <div class="invalid-feedback">Please enter short description </div>  -->
+
+        </div>
+        
+ <!-- now i want price and country ek row mai aaye for this ek row bano and usme in dono ko dal do  -->
+<div class="row ">
+
+    <div class="mb-3 col-3 col-md-4">
+        <label for="title" class="form-label">Price</label>
+        <input 
+        
+        name="listing[price]" 
+        placeholder="1200"  
+         
+        class="form-control"   
+        required >
+        <div class="invalid-feedback">Please enter a valid price </div> 
+</div>
+
+        <div class="mb-3 col-md-8">
+            <label for="title" class="form-label">Country</label>
+            <input 
+            type="text" 
+            name="listing[country]" 
+            placeholder="India" 
+            class="form-control"  
+             required > 
+    
+             <div class="invalid-feedback">Please enter a country name  listing[</div> 
+       
+    </div>
+
+
+
+</div>
+
+    
+     <!--* image form   -->
+<!-- <div class="mb-3">
+    <label for="title" class="form-label" >Image-Link</label>
+    <input type="text" placeholder="enter url for image " name="listing[image]"      class="form-control"   required >
+    <div class="invalid-feedback">Add valid image  </div> 
+
+</div> -->
+
+<!-- * here i use new format of image that is image uploading  -->
+<div class="mb-3">
+    <label for="title" class="form-label" >Upload-image</label>
+    <input type="file"   name="listing[image]"      class="form-control"   required >
+    <div class="invalid-feedback">Add valid image  </div> 
+
+</div>
+
+
+<div class="mb-3">
+    <label for="title" class="form-label">Location</label>
+    <input type="text" name="listing[location]" placeholder="Bihar" class="form-control"    required >
+    <div class="invalid-feedback">Enter a valid location  </div> 
+
+</div>
+       
+  
+
+
+      
+        <button class="btn btn-dark add-btn" type="submit">Add</button>
+<br><br>
+        </form>
+</div>
+    </div>
+

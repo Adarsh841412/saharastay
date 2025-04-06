@@ -1,0 +1,140 @@
+body{     /* ye font google font se laya  */
+    font-family: "Plus Jakarta Sans", sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+
+}
+
+.container{
+    flex:1;
+}
+
+/* i increase the size of navbar */
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+/* give color to airbnb icon  */
+
+.fa-airbnb{
+color:#fe424d;
+font-size:2rem;
+}
+/*  give darker color to all navbar elements*/
+.nav-link{
+    color:#222222 !important;
+}
+
+
+
+/* footer styling style  */
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+    /* color:red; */
+   
+}
+
+.f-info-links a:hover {
+    text-decoration:underline;
+}
+
+ .f-info-links ,.f-info-socials,.f-info-brand{    /* by this hm dono mai ek barri mai style dal skte hai  */
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} 
+
+.f-info-socials i{    
+  margin-right: 1rem;
+  font: size 1.2rem;
+
+}
+   
+.f-info{
+    align-items: space-evenly;
+    text-align: center; 
+ /* height: 1rem; */
+  background-color: #bebebe;
+  gap: 2px; 
+display: flex ; 
+justify-content: center;
+flex-wrap: wrap;
+
+} 
+
+
+/* * define styling for card*/
+
+
+
+.listing-card {
+    border: none !important;   
+margin-bottom:2rem;
+}
+
+.card-img-top{
+
+    height:15rem !important;
+    width:100% !important;
+  object-fit: cover !important;
+    border-radius:1rem !important;
+
+    
+}
+
+.card-body{
+    padding:0 !important;
+
+}
+
+.Listing-link{
+    text-decoration: none;
+}
+
+/* now i set somethign  on  overlay effect on  card  */
+
+/* initially i want when overlay text na dikhe thats why i set opacity =0 bur jab hover kre to dikhe */
+.card-img-overlay{   
+    opacity:0;
+}
+.card-img-overlay:hover{
+opacity:0.2;
+background-color: white;
+}
+
+.newbtn {
+    display: flex !important;
+    justify-content: center !important;  
+    align-items: center !important;
+}
+
+/* here i set styling for new page  */
+.add-btn{
+background-color: #fe424d !important;
+border: none !important;
+}
+
+
+/* now i style my show page  */
+
+.show-img{
+    height: 30vh;
+}
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
