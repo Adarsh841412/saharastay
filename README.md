@@ -28,7 +28,7 @@
 ## 📸 Screenshots
 
 _Add screenshots of your app here._
-
+![image alt](https://github.com/Adarsh841412/saharastay/blob/main/Screenshot%202025-05-21%20211210.png)
 ---
 
 ## 📂 Installation
