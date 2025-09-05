@@ -33,7 +33,7 @@
 ## 📂 Project Structure  
 
 ```plaintext
-
+SaharaStay/
 │── app.js                 # Main Express app
 │── models/                # Mongoose models (Listing.js, User.js, Review.js)
 │── controllers/           # Controllers for MVC structure
@@ -53,7 +53,9 @@
 │── middleware/            # Custom middleware & error handlers
 └── package.json
 ⚡ Installation & Setup
- # 1. Clone the repository
+bash
+Copy code
+# 1. Clone the repository
 git clone https://github.com/yourusername/sahara-stay.git
 cd sahara-stay
 
@@ -73,31 +75,26 @@ node app.js
 http://localhost:8080/listings
 🔑 Features
 🛡️ Authentication & Authorization
-
 User login/signup with Passport.js / JWT
 
 Role-based access control (Admin vs Guest)
 
 🏨 Listings
-
 Create, view, update, and delete hotel listings
 
 ✅ Flash message shown after creating or deleting a listing
 
 ⭐ Reviews & Ratings
-
 Users can leave feedback on listings
 
 ✅ Flash message shown after deleting a review
 
 🖼️ Image Handling
-
 Upload images with Cloudinary / Multer
 
 Fallback to default if none provided
 
 ⚙️ Middleware
-
 method-override for PUT/DELETE requests
 
 Authentication protection for routes
@@ -105,13 +102,11 @@ Authentication protection for routes
 Logging middleware for requests
 
 ✅ Validation
-
 Client-side validation with Bootstrap
 
 Server-side validation with JOI & Mongoose
 
 🚨 Error Handling
-
 Custom ExpressError class
 
 Async error handling with wrapAsync
@@ -119,62 +114,50 @@ Async error handling with wrapAsync
 Validation and cast error handling
 
 🏗️ Architecture
-
 MVC-based design (Models, Views, Controllers)
 
 🌍 Deployment
-
 Render (Backend)
 
 Vercel (Frontend / static assets, if separated)
 
-## 📸 Screenshots
-
-![image alt](https://github.com/Adarsh841412/saharastay/blob/main/Screenshot%202025-05-21%20211210.png)
----
-
-| Method | Endpoint                          | Description          |
-| ------ | --------------------------------- | -------------------- |
-| GET    | `/listings`                       | Get all listings     |
-| GET    | `/listings/:id`                   | Show listing details |
-| GET    | `/listings/new`                   | Form for new listing |
-| POST   | `/listings`                       | Create new listing   |
-| GET    | `/listings/:id/edit`              | Edit listing form    |
-| PUT    | `/listings/:id`                   | Update listing       |
-| DELETE | `/listings/:id`                   | Delete listing       |
-| POST   | `/listings/:id/reviews`           | Add review & rating  |
-| DELETE | `/listings/:id/reviews/:reviewId` | Delete review        |
+📸 Screenshots
 
 
+🧩 API Endpoints
+Method	Endpoint	Description
+GET	/listings	Get all listings
+GET	/listings/:id	Show listing details
+GET	/listings/new	Form for new listing
+POST	/listings	Create new listing
+GET	/listings/:id/edit	Edit listing form
+PUT	/listings/:id	Update listing
+DELETE	/listings/:id	Delete listing
+POST	/listings/:id/reviews	Add review & rating
+DELETE	/listings/:id/reviews/:reviewId	Delete review
 
+🔧 Environment Variables
+Create a .env file in the root directory and add:
 
-🔑 Setup Environment Variables
+env
+Copy code
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 CLOUDINARY_URL=your_cloudinary_config
 PORT=5000
+🛡️ Error Handling
+Middleware ensures invalid routes return 404
 
-## 🛡️ Error Handling
-- Middleware for error handling 
-- Custom error messages 
-- Async errors handled using **wrapAsync**  
-- Default fallback error handler  
+Custom error messages with status codes (400, 401, 403, 404, 500)
 
----
+Async errors handled using wrapAsync
 
-## 📌 Future Enhancements
-- 🗺️ Interactive maps for hotel locations  
-- 🤖 Recommendation system for best stays  
+Default fallback error handler
 
----
+📌 Future Enhancements
+🗺️ Interactive maps for hotel locations
 
-## 👨‍💻 Author
-**Adarsh Dubey**  
+🤖 Recommendation system for best stays
 
-
-
-
-
-
-
-
+👨‍💻 Author
+Adarsh Dubey
