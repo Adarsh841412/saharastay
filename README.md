@@ -139,6 +139,14 @@ PORT=5000
 ---
 
 
+
+## 📌 Future Enhancements
+- 🗺️ Interactive maps for hotel locations  
+- 🤖 Recommendation system for best stays  
+
+---
+
+
 ## 📂 Project Structure  
 
 ```plaintext
@@ -164,16 +172,6 @@ SaharaStay/
 
 
 
-
-
-## 📌 Future Enhancements
-- 🗺️ Interactive maps for hotel locations  
-- 🤖 Recommendation system for best stays  
-
----
-
-## 👨‍💻 Author
-**Adarsh Dubey**  
 
 
 
