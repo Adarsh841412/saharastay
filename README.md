@@ -36,6 +36,8 @@ An **Airbnb-type full-stack web application** where users can:
 
 ## 📂 Project Structure  
 
+## 📂 Project Structure  
+
 ```plaintext
 SaharaStay/
 │── app.js                 # Main Express app
@@ -57,7 +59,6 @@ SaharaStay/
 │── middleware/            # Custom middleware & error handlers
 └── package.json
 
----
 
 ## ⚡ Installation & Setup
 1. Clone the repo:
@@ -88,45 +89,45 @@ node app.js
 
 http://localhost:8080/listings
 
-## 🔑 Features
+## 🔑 Features  
 
-### 🛡️ Authentication & Authorization
-- User login/signup with **Passport.js / JWT**  
-- Role-based access control (**Admin vs Guest**)  
+- **Authentication & Authorization**  
+  - User login/signup with **Passport.js / JWT**  
+  - Role-based access control (**Admin & Guest**)  
 
-### 🏨 Listings
-- Create, view, update, and delete hotel listings
-✅ Flash message shown after creating or deleting a listing
+- **Listings**  
+  - Create, view, update, and delete hotel listings  
+  - ✅ Flash message shown after creating or deleting a listing  
 
-### ⭐ Reviews & Ratings
-- Users can leave feedback on listings  
-✅ Flash message shown after deleting a review
-### 🖼️ Image Handling
-- Upload images with **Cloudinary / Multer**  
-- Fallback to default if none provided  
+- **Reviews & Ratings**  
+  - Users can leave feedback on listings  
+  - ✅ Flash message shown after deleting a review  
 
-### ⚙️ Middleware
-- `method-override` for PUT/DELETE requests  
-- Authentication protection for routes  
-- Logging middleware for requests  
+- **Image Handling**  
+  - Upload images with **Cloudinary / Multer**  
+  - Fallback to default if none provided  
 
-### ✅ Validation
-- Client-side validation with **Bootstrap**  
-- Server-side validation with **JOI & Mongoose**  
+- **Middleware**  
+  - `method-override` for PUT/DELETE requests  
+  - Authentication protection for routes  
+  - Logging middleware for requests  
 
-### 🚨 Error Handling
-- Custom **ExpressError** class  
-- Async error handling with **wrapAsync**  
-- Validation and cast error handling  
+- **Validation**  
+  - Client-side validation with **Bootstrap**  
+  - Server-side validation with **JOI & Mongoose**  
 
-### 🏗️ Architecture
-- **MVC-based design** (Models, Views, Controllers)  
+- **Error Handling**  
+  - Custom **ExpressError** class  
+  - Async error handling with **wrapAsync**  
+  - Validation and cast error handling  
 
-### 🌍 Deployment
-- **Render** for backend hosting  
-- **Vercel** for frontend/static assets  
+- **Architecture**  
+  - **MVC-based design** (Models, Views, Controllers)  
 
----
+- **Deployment**  
+  - **Render** for backend hosting  
+  - **Vercel** for frontend/static assets  
+
 
 ## 📸 Screenshots
 
