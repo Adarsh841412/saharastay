@@ -1,20 +1,19 @@
 # Sahara Stay 🏨  
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![Mongoose](https://img.shields.io/badge/Mongoose-800?style=for-the-badge&logo=mongoose&logoColor=white) ![EJS](https://img.shields.io/badge/EJS-6E4A7E?style=for-the-badge&logo=ejs&logoColor=white) ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![Passport.js](https://img.shields.io/badge/Passport.js-34E27A?style=for-the-badge&logo=passport&logoColor=black) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![Cloudinary](https://img.shields.io/badge/Cloudinary-4285F4?style=for-the-badge&logo=cloudinary&logoColor=white) ![Multer](https://img.shields.io/badge/Multer-FFCA28?style=for-the-badge&logo=npm&logoColor=black) ![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
-
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![Mongoose](https://img.shields.io/badge/Mongoose-800?style=for-the-badge&logo=mongoose&logoColor=white) ![EJS](https://img.shields.io/badge/EJS-6E4A7E?style=for-the-badge&logo=ejs&logoColor=white) ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![Passport.js](https://img.shields.io/badge/Passport.js-34E27A?style=for-the-badge&logo=passport&logoColor=black) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![Cloudinary](https://img.shields.io/badge/Cloudinary-4285F4?style=for-the-badge&logo=cloudinary&logoColor=white) ![Multer](https://img.shields.io/badge/Multer-FFCA28?style=for-the-badge&logo=npm&logoColor=black) ![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)  
 
 ---
 
 ## 📖 Overview  
 **Sahara Stay** is an **Airbnb-like full-stack web application** where users can:  
-- Sign up / Log in  
-- Access role-based features (**Admin & Guest**)  
-- Create and manage hotel listings with **title, description, image, price, location, and country**  
-- Upload images using **Cloudinary / Multer**  
-- Perform **CRUD operations**  
-- Leave **reviews & ratings**  
-- Benefit from **secure validation, error handling, and an MVC-based architecture**  
-- Fully deployed on **Render**  
+- ✨ Sign up / Log in  
+- 🔐 Access role-based features (**Admin & Guest**)  
+- 🏨 Create and manage hotel listings with **title, description, image, price, location, and country**  
+- 🖼️ Upload images using **Cloudinary / Multer**  
+- 🔄 Perform **CRUD operations**  
+- ⭐ Leave **reviews & ratings**  
+- 🛡️ Benefit from **secure validation, error handling, and an MVC-based architecture**  
+- 🌍 Fully deployed on **Render**  
 
 ---
 
@@ -31,7 +30,7 @@
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Structure  
 
 ```plaintext
 SaharaStay/
@@ -53,69 +52,81 @@ SaharaStay/
 │── public/                # Static assets (CSS, JS, images)
 │── middleware/            # Custom middleware & error handlers
 └── package.json
+⚡ Installation & Setup
+ # 1. Clone the repository
+git clone https://github.com/yourusername/sahara-stay.git
+cd sahara-stay
 
----
+# 2. Install dependencies
+npm install
 
-## ⚡ Installation & Setup  
+# 3. Start MongoDB (local or Atlas). Default URL:
+mongodb://127.0.0.1:27017/wanderlusts
 
-```bash
-1. Clone the repository
-   git clone https://github.com/yourusername/sahara-stay.git
-   cd sahara-stay
+# 4. Initialize sample listings
+node init/index.js
 
-2. Install dependencies
-   npm install
+# 5. Run the server
+node app.js
 
-3. Start MongoDB (local or Atlas). Default URL:
-   mongodb://127.0.0.1:27017/wanderlusts
+# 6. Open in browser
+http://localhost:8080/listings
+🔑 Features
+🛡️ Authentication & Authorization
 
-4. Initialize sample listings
-   node init/index.js
+User login/signup with Passport.js / JWT
 
-5. Run the server
-   node app.js
+Role-based access control (Admin vs Guest)
 
-6. Open in browser
-   http://localhost:8080/listings
+🏨 Listings
 
-## 🔑 Features  
+Create, view, update, and delete hotel listings
 
-### 🛡️ Authentication & Authorization  
-- User login/signup with **Passport.js / JWT**  
-- Role-based access control (**Admin vs Guest**)  
+✅ Flash message shown after creating or deleting a listing
 
-### 🏨 Listings  
-- Create, view, update, and delete hotel listings  
-- ✅ Flash message shown after creating or deleting a listing  
+⭐ Reviews & Ratings
 
-### ⭐ Reviews & Ratings  
-- Users can leave feedback on listings  
-- ✅ Flash message shown after deleting a review  
+Users can leave feedback on listings
 
-### 🖼️ Image Handling  
-- Upload images with **Cloudinary / Multer**  
-- Fallback to default if none provided  
+✅ Flash message shown after deleting a review
 
-### ⚙️ Middleware  
-- `method-override` for PUT/DELETE requests  
-- Authentication protection for routes  
-- Logging middleware for requests  
+🖼️ Image Handling
 
-### ✅ Validation  
-- Client-side validation with **Bootstrap**  
-- Server-side validation with **JOI & Mongoose**  
+Upload images with Cloudinary / Multer
 
-### 🚨 Error Handling  
-- Custom **ExpressError** class  
-- Async error handling with **wrapAsync**  
-- Validation and cast error handling  
+Fallback to default if none provided
 
-### 🏗️ Architecture  
-- **MVC-based design** (Models, Views, Controllers)  
+⚙️ Middleware
 
-### 🌍 Deployment  
-- **Render** 
- 
+method-override for PUT/DELETE requests
+
+Authentication protection for routes
+
+Logging middleware for requests
+
+✅ Validation
+
+Client-side validation with Bootstrap
+
+Server-side validation with JOI & Mongoose
+
+🚨 Error Handling
+
+Custom ExpressError class
+
+Async error handling with wrapAsync
+
+Validation and cast error handling
+
+🏗️ Architecture
+
+MVC-based design (Models, Views, Controllers)
+
+🌍 Deployment
+
+Render (Backend)
+
+Vercel (Frontend / static assets, if separated)
 
 ## 📸 Screenshots
 
