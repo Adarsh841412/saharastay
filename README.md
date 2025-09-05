@@ -62,7 +62,7 @@ node app.js
 
 ## Visit in browser:
 
-http://localhost:8080/listings
+http://localhost:8080/listings](https://saharastay.onrender.com/listings
 
 ## 🔑 Features  
 
