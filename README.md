@@ -33,7 +33,7 @@
 ## 📂 Project Structure  
 
 ```plaintext
-SaharaStay/
+
 │── app.js                 # Main Express app
 │── models/                # Mongoose models (Listing.js, User.js, Review.js)
 │── controllers/           # Controllers for MVC structure
