@@ -34,31 +34,6 @@ An **Airbnb-type full-stack web application** where users can:
 ---
 
 
-## 📂 Project Structure  
-
-## 📂 Project Structure  
-
-```plaintext
-SaharaStay/
-│── app.js                 # Main Express app
-│── models/                # Mongoose models (Listing.js, User.js, Review.js)
-│── controllers/           # Controllers for MVC structure
-│── routes/                # Route handlers
-│── views/                 # EJS templates
-│   ├── listings/
-│   │   ├── index.ejs
-│   │   ├── new.ejs
-│   │   ├── show.ejs
-│   │   └── edit.ejs
-│   ├── users/
-│   └── reviews/
-│── init/                  # Database initialization
-│   ├── data.js
-│   └── index.js
-│── public/                # Static assets (CSS, JS, images)
-│── middleware/            # Custom middleware & error handlers
-└── package.json
-
 
 ## ⚡ Installation & Setup
 1. Clone the repo:
@@ -162,6 +137,34 @@ PORT=5000
 - Default fallback error handler  
 
 ---
+
+
+## 📂 Project Structure  
+
+```plaintext
+SaharaStay/
+│── app.js                 # Main Express app
+│── models/                # Mongoose models (Listing.js, User.js, Review.js)
+│── controllers/           # Controllers for MVC structure
+│── routes/                # Route handlers
+│── views/                 # EJS templates
+│   ├── listings/
+│   │   ├── index.ejs
+│   │   ├── new.ejs
+│   │   ├── show.ejs
+│   │   └── edit.ejs
+│   ├── users/
+│   └── reviews/
+│── init/                  # Database initialization
+│   ├── data.js
+│   └── index.js
+│── public/                # Static assets (CSS, JS, images)
+│── middleware/            # Custom middleware & error handlers
+└── package.json
+
+
+
+
 
 ## 📌 Future Enhancements
 - 🗺️ Interactive maps for hotel locations  
