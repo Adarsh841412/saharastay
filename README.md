@@ -5,7 +5,7 @@
 ---
 
 ### 📖 Project Overview
-An **Airbnb-type full-stack web application** where users can:  
+An ** full-stack web application** where users can:  
 - Sign up / Log in  
 - Role-based access (**Admin & Guest**)  
 - List hotels with **title, description, image, price, location, and country**  
