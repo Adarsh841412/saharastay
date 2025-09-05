@@ -1,8 +1,50 @@
-# 🌍 Sahara Stay
+# Sahara Stay 🏨  
 
-**Sahara Stay** is a full-featured web application that allows users to add, manage, and explore hotel listings. Users can sign up, log in, post hotel listings with details like price, location, images, and more. The platform also supports user ratings, comments, and complete CRUD functionality for listings.
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)  
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)  
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)  
+![Mongoose](https://img.shields.io/badge/Mongoose-800?style=for-the-badge&logo=mongoose&logoColor=white)  
+![EJS](https://img.shields.io/badge/EJS-6E4A7E?style=for-the-badge&logo=ejs&logoColor=white)  
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)  
+![Passport.js](https://img.shields.io/badge/Passport.js-34E27A?style=for-the-badge&logo=passport&logoColor=black)  
+![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)  
+![Cloudinary](https://img.shields.io/badge/Cloudinary-4285F4?style=for-the-badge&logo=cloudinary&logoColor=white)  
+![Multer](https://img.shields.io/badge/Multer-FFCA28?style=for-the-badge&logo=npm&logoColor=black)  
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)  
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)  
 
 ---
+
+### 📖 Project Overview
+An **Airbnb-type full-stack web application** where users can:  
+- Sign up / Log in  
+- Role-based access (**Admin & Guest**)  
+- List hotels with **title, description, image, price, location, and country**  
+- Upload images via **Cloudinary / Multer**  
+- Perform **CRUD operations**  
+- Leave **reviews & ratings**  
+- Enjoy secure validation, error handling & MVC-based design  
+- Fully deployed on **Render / Vercel**  
+
+---
+
+## 🚀 Tech Stack
+- **Backend**: Node.js, Express.js, MongoDB, Mongoose  
+- **Frontend**: EJS, Bootstrap, JavaScript  
+- **Architecture**: MVC (Models, Views, Controllers)  
+- **Middleware**: Method-Override, Express.urlencoded, Express.static  
+- **Authentication**: Passport.js / JWT  
+- **Image Uploads**: Multer + Cloudinary  
+- **Validation**: Mongoose validation + JOI + Bootstrap form validation  
+- **Error Handling**:  
+  - Custom error classes  
+  - Middleware-based error handling  
+  - Async errors handled with `wrapAsync`  
+- **Deployment**: Render (backend) + Vercel (frontend/static assets if separated)  
+
+---
+
+## 📂 Project Structure
 
 ## 🚀 Features
 
