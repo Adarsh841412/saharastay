@@ -124,7 +124,6 @@ SaharaStay/
 
 ### 🌍 Deployment
 - **Render** for backend hosting  
-- **Vercel** for frontend/static assets  
 
 ---
 
