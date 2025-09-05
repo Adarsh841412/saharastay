@@ -33,28 +33,29 @@ An **Airbnb-type full-stack web application** where users can:
 
 ---
 
-## 📂 Project Structure
+
+## 📂 Project Structure  
+
+```plaintext
 SaharaStay/
-│── app.js # Main Express app
-│── models/ # Mongoose models (Listing.js, User.js, Review.js)
-│── controllers/ # Controllers for MVC structure
-│── routes/ # Route handlers
-│── views/ # EJS templates
-│ ├── listings/
-│ │ ├── index.ejs
-│ │ ├── new.ejs
-│ │ ├── show.ejs
-│ │ └── edit.ejs
-│ ├── users/
-│ └── reviews/
-│── init/ # Database initialization
-│ ├── data.js
-│ └── index.js
-│── public/ # Static assets (CSS, JS, images)
-│── middleware/ # Custom middleware & error handlers
+│── app.js                 # Main Express app
+│── models/                # Mongoose models (Listing.js, User.js, Review.js)
+│── controllers/           # Controllers for MVC structure
+│── routes/                # Route handlers
+│── views/                 # EJS templates
+│   ├── listings/
+│   │   ├── index.ejs
+│   │   ├── new.ejs
+│   │   ├── show.ejs
+│   │   └── edit.ejs
+│   ├── users/
+│   └── reviews/
+│── init/                  # Database initialization
+│   ├── data.js
+│   └── index.js
+│── public/                # Static assets (CSS, JS, images)
+│── middleware/            # Custom middleware & error handlers
 └── package.json
-
-
 
 ---
 
@@ -94,11 +95,12 @@ http://localhost:8080/listings
 - Role-based access control (**Admin vs Guest**)  
 
 ### 🏨 Listings
-- Create, view, update, and delete hotel listings  
+- Create, view, update, and delete hotel listings
+✅ Flash message shown after creating or deleting a listing
 
 ### ⭐ Reviews & Ratings
 - Users can leave feedback on listings  
-
+✅ Flash message shown after deleting a review
 ### 🖼️ Image Handling
 - Upload images with **Cloudinary / Multer**  
 - Fallback to default if none provided  
@@ -168,25 +170,6 @@ PORT=5000
 
 ## 👨‍💻 Author
 **Adarsh Dubey**  
-
-
-Convert the following raw project notes into a professional README.md format.
-
-Use proper Markdown headings (#, ##, ###).
-
-Add bullet points, numbered lists, and code blocks where needed.
-
-Format commands inside bash blocks.
-
-Format environment variables inside env blocks.
-
-Use emojis for sections (📖 Overview, 🚀 Tech Stack, ⚡ Installation & Setup, 🔑 Features, 🛡️ Error Handling, 📸 Screenshots, 🧩 API Endpoints, 📌 Future Enhancements, 👨‍💻 Author).
-
-Convert any “Method / Endpoint / Description” parts into a Markdown table.
-
-Ensure everything is in README.md ready format, no plain text.
-
-Give the final answer inside one single Markdown block (so I can copy-paste directly into README.md).
 
 
 
