@@ -42,6 +42,9 @@
 
 ## 📂 Project Structure  
 
+## 📂 Project Structure
+
+```plaintext
 SaharaStay/
 │── app.js                 # Main Express app
 │── models/                # Mongoose models (Listing.js, User.js, Review.js)
@@ -61,8 +64,6 @@ SaharaStay/
 │── public/                # Static assets (CSS, JS, images)
 │── middleware/            # Custom middleware & error handlers
 └── package.json
-
-
 
 ---
 
