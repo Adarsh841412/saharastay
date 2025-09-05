@@ -43,23 +43,23 @@
 ## 📂 Project Structure  
 
 SaharaStay/
-│── app.js # Main Express app
-│── models/ # Mongoose models (Listing.js, User.js, Review.js)
-│── controllers/ # Controllers for MVC structure
-│── routes/ # Route handlers
-│── views/ # EJS templates
-│ ├── listings/
-│ │ ├── index.ejs
-│ │ ├── new.ejs
-│ │ ├── show.ejs
-│ │ └── edit.ejs
-│ ├── users/
-│ └── reviews/
-│── init/ # Database initialization
-│ ├── data.js
-│ └── index.js
-│── public/ # Static assets (CSS, JS, images)
-│── middleware/ # Custom middleware & error handlers
+│── app.js                 # Main Express app
+│── models/                # Mongoose models (Listing.js, User.js, Review.js)
+│── controllers/           # Controllers for MVC structure
+│── routes/                # Route handlers
+│── views/                 # EJS templates
+│   ├── listings/
+│   │   ├── index.ejs
+│   │   ├── new.ejs
+│   │   ├── show.ejs
+│   │   └── edit.ejs
+│   ├── users/
+│   └── reviews/
+│── init/                  # Database initialization
+│   ├── data.js
+│   └── index.js
+│── public/                # Static assets (CSS, JS, images)
+│── middleware/            # Custom middleware & error handlers
 └── package.json
 
 
